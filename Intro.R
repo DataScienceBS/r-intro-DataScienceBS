@@ -21,7 +21,7 @@ for (a in sepal_area) {
 }
 
 #create a new column
-iris_data$Sepal.Area <- NA
+iris_data$Sepal.Area <- iris_data$Sepal.Width * iris_data$Sepal.Length
 
 #barplot for count of species
 species_counts <- table(iris_data$Species)
